@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #adf0d4
-    --secondary-color: #1fd8a4
-    --bg-color: #0d1512
+    --primary-color: #adf0d4;
+    --secondary-color: #1fd8a4;
+    --bg-color: #0d1512;
 }
 
 
@@ -33,6 +33,10 @@ header, main, footer {
     width: 100%;
 }
 
+p {
+    font-size: 1.05em;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -44,7 +48,7 @@ nav {
     color: var(--secondary-color);
     display: flex;
     align-items: center;
-    gap: 32 px;
+    gap: 32px;
 }
 
 nav a {
@@ -53,4 +57,65 @@ nav a {
 
 nav a:hover {
     opacity: 0.7;
+}
+
+main, section, .nameContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    gap: 64px;
+}
+
+section {
+    gap: 48px;
+}
+
+.nameContainer{
+    gap:8px;
+}
+
+.statsContainer {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+}
+
+.imgContainer {
+    border-radius: 100%;
+    max-width: 114px;
+    overflow: hidden;
+}
+
+.imgContainer img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit:cover;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats > div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.stats div i {
+    font-size: 1.4em;
+}
+
+.stats div div {
+    display: grid;
+    place-items: center;
+    min-width: 40px;
+}
+
+.aboutMe {
+    line-height: 1.5em;
 }
